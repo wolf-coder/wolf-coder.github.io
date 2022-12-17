@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs things on publishing</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+</head>
+<body>
+<div id="content">
+<h1 class="title">Emacs things on publishing</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org120cdf1">Machine Learning</a></li>
+<li><a href="#org27d9df0">Other resources</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org120cdf1" class="outline-2">
+<h2 id="org120cdf1">Machine Learning</h2>
+<div class="outline-text-2" id="text-org120cdf1">
+<p>
+next page: <a href="Eamcs.html">Click</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org27d9df0" class="outline-2">
+<h2 id="org27d9df0">Other resources</h2>
+<div class="outline-text-2" id="text-org27d9df0">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Set the package installation directory so that packages aren't stored in the</span>
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">~/.emacs.d/elpa path.</span>
+(<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">package</span>)
+(<span style="font-weight: bold;">setq</span> package-user-dir (expand-file-name <span style="font-style: italic;">"./.packages"</span>))
+(<span style="font-weight: bold;">setq</span> package-archives '((<span style="font-style: italic;">"melpa"</span> . <span style="font-style: italic;">"https://melpa.org/packages/"</span>)
+                         (<span style="font-style: italic;">"elpa"</span> . <span style="font-style: italic;">"https://elpa.gnu.org/packages/"</span>)))
+
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Initialize the package system</span>
+(package-initialize)
+(<span style="font-weight: bold;">unless</span> package-archive-contents
+  (package-refresh-contents))
+
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Install dependencies</span>
+(package-install 'htmlize)  
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+</div>
+</body>
+</html>
