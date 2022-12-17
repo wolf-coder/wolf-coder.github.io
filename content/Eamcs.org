@@ -1,0 +1,20 @@
+* Helpfull Packages
+** youtube-sub-extractor
+*** DONE 1) Download package from home page [devops]
+  - mkdir ~/.emacs.d/Lisp 
+  - cd /~//.emacs.d/Lisp
+  - git clone https://github.com/agzam/youtube-sub-extractor.el.git
+**** DONE Warning :
+- Here we changed the cloned directory name from youtube-sub-extractor.el to youtube-sub-extractor (deleting the 'el')
+
+*** 2) Installation 
+
+- If you download Emacs Lisp files yourself or you write local Lisp files, just add the directories containing those files to ‘load-path’. [Ref:[[https://www.emacswiki.org/emacs/LoadPath][Link]]]
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "/home/cuore-pc/.emacs.d/Lisp/youtube-sub-extractor")
+  (require 'youtube-sub-extractor)
+#+end_src
+
+*** Usage: yt
+M-x yt-extract-subs
+
