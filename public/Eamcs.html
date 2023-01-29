@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org21bedc5">Helpfull Packages</a>
+<ul>
+<li><a href="#orga815094">youtube-sub-extractor</a>
+<ul>
+<li><a href="#org3265869"><span class="done DONE">DONE</span> 1) Download package from home page [devops]</a></li>
+<li><a href="#org6d99b32">2) Installation</a></li>
+<li><a href="#org19c2f68">Usage: yt</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21bedc5" class="outline-2">
+<h2 id="org21bedc5">Helpfull Packages</h2>
+<div class="outline-text-2" id="text-org21bedc5">
+</div>
+<div id="outline-container-orga815094" class="outline-3">
+<h3 id="orga815094">youtube-sub-extractor</h3>
+<div class="outline-text-3" id="text-orga815094">
+</div>
+<div id="outline-container-org3265869" class="outline-4">
+<h4 id="org3265869"><span class="done DONE">DONE</span> 1) Download package from home page [devops]</h4>
+<div class="outline-text-4" id="text-org3265869">
+<ul class="org-ul">
+<li>mkdir ~/.emacs.d/Lisp</li>
+<li>cd <i>~/</i>.emacs.d/Lisp</li>
+<li>git clone <a href="https://github.com/agzam/youtube-sub-extractor.el.git">https://github.com/agzam/youtube-sub-extractor.el.git</a></li>
+</ul>
+</div>
+<ul class="org-ul">
+<li><a id="org3df0848"></a><span class="done DONE">DONE</span> Warning :<br />
+<div class="outline-text-5" id="text-org3df0848">
+<ul class="org-ul">
+<li>Here we changed the cloned directory name from youtube-sub-extractor.el to youtube-sub-extractor (deleting the 'el')</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org6d99b32" class="outline-4">
+<h4 id="org6d99b32">2) Installation</h4>
+<div class="outline-text-4" id="text-org6d99b32">
+<ul class="org-ul">
+<li>If you download Emacs Lisp files yourself or you write local Lisp files, just add the directories containing those files to ‘load-path’. [Ref:<a href="https://www.emacswiki.org/emacs/LoadPath">Link</a>]</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(add-to-list 'load-path <span style="font-style: italic;">"/home/cuore-pc/.emacs.d/Lisp/youtube-sub-extractor"</span>)
+(<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">youtube-sub-extractor</span>)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org19c2f68" class="outline-4">
+<h4 id="org19c2f68">Usage: yt</h4>
+<div class="outline-text-4" id="text-org19c2f68">
+<p>
+M-x yt-extract-subs
+</p>
+
+<p>
+commit is DONE
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+</div>
+</body>
+</html>
