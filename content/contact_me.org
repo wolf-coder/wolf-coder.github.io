@@ -1,0 +1,9 @@
+#+title: 
+#+INCLUDE: "header.org"
+* Resume
+** [[https://drive.gogle.como/file/d/1AGHa8hmQUjBmY9CA_3bj3vCYFUxrZn3s/view?usp=sharing][Click]]
+* Reach me out
+- If you have any questions or would like to connect, please don't hesitate to reach out to me. You can find me on:
+  - [[https://www.linkedin.com/in/fakhri-baklouti/][LinkedIn]]
+  - [[https://www.github.com/wolf-coder][GitHub]]
+  - [[https://twitter.com/WolfCuore][Twitter]]

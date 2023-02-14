@@ -1,4 +1,0 @@
-#+title: Knowlege_base
-#+INCLUDE: "~/Programming/Projects/my-org-site/content/header.org"
-
-* h1: learn from the best
