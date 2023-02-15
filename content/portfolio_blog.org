@@ -15,16 +15,18 @@
 - Selenium was used to automate the process of accessing Lichess and the Lichess API was utilized to interact with the chessboard.
 * Timeline of Project Progression:
 ** Planning and Research: ( ~ 4 week)
-- I started with the Simple Audio Recognition: Recognizing Keywords tutorial to involve myself in ASR. It was challenging to acquaint myself with the various basic components of ASR, such as preprocessing audio files in the WAV format, converting to spectrograms, training and evaluating ASR models.
+- I started with the [[https://www.tensorflow.org/tutorials/audio/simple_audio][Tensorflow Simple Audio Recognition]] tutorial to involve myself in ASR. It was challenging to acquaint myself with the various basic components of ASR, such as preprocessing audio files in the =WAV= format, converting to =spectrograms=, training and evaluating ASR models.
 *** The Vosk ASR toolkit
-- Choosing an ASR toolkit was a crucial task. There are several potential choices of open-source toolkits available for building a recognition system, including Sphinx-4 (written in Java) and the RWTH (written in C++). I spent a few weeks studying a solution to my problem and eventually came across Kaldi, an ASR toolkit. While it was the best tool available at the time, it was challenging to comprehend, train models, and build client applications. However, after more research, I discovered Vosk, which simplifies the use of Kaldi and includes a pre-trained small english model that could solve my problem. You can use it with different platforms and programming languages.
+- Choosing an ASR toolkit was a crucial task. There are several potential choices of open-source toolkits available for building a recognition system, including Sphinx-4 (written in Java) and the RWTH (written in C++). I spent a few weeks studying a solution to my problem and eventually came across =Kaldi=, an ASR toolkit. While it was the best tool available at the time, it was challenging to comprehend, train models, and build client applications. However, after more research, I discovered =Vosk=, which simplifies the use of Kaldi and includes a pre-trained small english model that could solve my problem. You can use it with different platforms and programming languages.
 **** A Diagram of the Kaldi model used in vosk
 [[./ORG_PICTURES/Vosk_Archi.png]]
   1. The sounds produced are digitized by the microphone and transmitted to our ASR model.
 
-  2. Feature extraction: In the feature extraction step of a speech recognition system, the goal is to extract a set of features from the raw audio signal that capture important characteristics of the speech signal. These features are designed to be representative of the acoustic properties of the speech signal and are typically derived from the spectral characteristics of the signal. There are many different ways to extract features from a speech signal. Kaldi uses the Mel-Frequency Cepstral Coefficients (MFCCs): They are a common choice for speech recognition systems, as they are robust to variations in pitch and speaker characteristics. MFCCs are derived from the power spectrum of the signal, and capture the spectral envelope of the signal in a compact form.
+  2. Feature extraction: In the feature extraction step of a speech recognition system, the goal is to extract a set of features from the raw audio signal that capture important characteristics of the speech signal. These features are designed to be representative of the acoustic properties of the speech signal and are typically derived from the spectral characteristics of the signal.
 
-  3. The recognition engine analyzes this sequence of acoustic vectors by comparing it with those in its memory [Acouastic model + lexicon(Pronunciation model) + language model] and produces the _most likely text sequence_.
+     + There are many different ways to extract features from a speech signal. Kaldi uses the Mel-Frequency Cepstral Coefficients (=MFCCs=): They are a common choice for speech recognition systems, as they are robust to variations in pitch and speaker characteristics. MFCCs are derived from the power spectrum of the signal, and capture the spectral envelope of the signal in a compact form.
+
+  3. The recognition engine analyzes this sequence of acoustic vectors by comparing it with those in its memory [ =Acouastic model= + =lexicon= (Pronunciation model) + =language model= ] and produces the _most likely text sequence_.
 
 - Worth Noticing: This explanation provides a simplified overview of how the model operates. However, it's worth noting that there are many intricate details involved in connecting the models with a decision tree and in representing the phonemes. Despite this, the simplified version presented can still be useful in grasping the general process.
 
@@ -35,7 +37,7 @@
   + [[https://www.pgnmentor.com/][pgnmentor]] is home to the best collection of PGN files, which are free to access and contain over a million Grandmaster games. 
   +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog page at [insert link].
 
-**** vosk: Updating recognizer vocabulary in runtime
+**** Vosk: Updating recognizer vocabulary in runtime
 - Vosk allows the model to update its vocabulary during runtime. You can define the list of possible words or phrases as a JSON list.
 - Here's a python code snippet example:
   #+begin_src python
