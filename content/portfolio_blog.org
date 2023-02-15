@@ -4,7 +4,7 @@
 #+HTML_HEAD: <style>pre.src.src-python span{background:#101416;color:#a865cc;} </style>
 * Introduction:
 - Online chess has experienced a surge in popularity in recent years due to a combination of factors such the growth of online gaming communities, and the increase in online chess platforms. This has led to an increase in the number of players, as well as a rise in the level of competition, making online chess a highly entertaining and challenging experience for all involved.
-[PICTURE]
+
 - This project represents an MVP step in the development of a desktop/mobile application that will implement various machine learning solutions and features for the game of chess.  One of these features will be an ASR model allowing users to dictate their `moves` instead of writing them down with the keyboard or using the mouse.
 - Having the proposed as a feature would be awesome for many reasons (comfort, accessibility, playing blindfold, learning coordinates…)
 * Overview:
@@ -19,7 +19,7 @@
 *** The Vosk ASR toolkit
 - Choosing an ASR toolkit was a crucial task. There are several potential choices of open-source toolkits available for building a recognition system, including Sphinx-4 (written in Java) and the RWTH (written in C++). I spent a few weeks studying a solution to my problem and eventually came across Kaldi, an ASR toolkit. While it was the best tool available at the time, it was challenging to comprehend, train models, and build client applications. However, after more research, I discovered Vosk, which simplifies the use of Kaldi and includes a pre-trained small english model that could solve my problem. You can use it with different platforms and programming languages.
 **** A Diagram of the Kaldi model used in vosk
-[IMAGE]
+[[./ORG_PICTURES/Vosk_Archi.png]]
   1. The sounds produced are digitized by the microphone and transmitted to our ASR model.
 
   2. Feature extraction: In the feature extraction step of a speech recognition system, the goal is to extract a set of features from the raw audio signal that capture important characteristics of the speech signal. These features are designed to be representative of the acoustic properties of the speech signal and are typically derived from the spectral characteristics of the signal. There are many different ways to extract features from a speech signal. Kaldi uses the Mel-Frequency Cepstral Coefficients (MFCCs): They are a common choice for speech recognition systems, as they are robust to variations in pitch and speaker characteristics. MFCCs are derived from the power spectrum of the signal, and capture the spectral envelope of the signal in a compact form.
