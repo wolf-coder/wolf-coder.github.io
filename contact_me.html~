@@ -6,28 +6,27 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<meta name="description" content="Header"
- />
-<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<meta name="description" content="Header" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/htmlize.css">
+<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/readtheorg.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://distro.tube/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://distro.tube/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 </head>
 <body>
-<div id="content">
-<div id="table-of-contents">
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7b5c0b2">Resume</a>
+<li><a href="#orgc702a83">Resume</a>
 <ul>
-<li><a href="#orgab7d030">Click</a></li>
+<li><a href="#org2555871">Click</a></li>
 </ul>
 </li>
-<li><a href="#orge7f14cd">Reach me out</a></li>
+<li><a href="#orgf66f5cb">Reach me out</a></li>
 </ul>
 </div>
 </div>
@@ -38,17 +37,17 @@
     <span class="topbar-menu"><a href="contact_me.html">Contact Me</a></span>
   </div>
 </div>
-<div id="outline-container-org7b5c0b2" class="outline-2">
-<h2 id="org7b5c0b2">Resume</h2>
-<div class="outline-text-2" id="text-org7b5c0b2">
+<div id="outline-container-orgc702a83" class="outline-2">
+<h2 id="orgc702a83">Resume</h2>
+<div class="outline-text-2" id="text-orgc702a83">
 </div>
-<div id="outline-container-orgab7d030" class="outline-3">
-<h3 id="orgab7d030"><a href="https://drive.gogle.como/file/d/1AGHa8hmQUjBmY9CA_3bj3vCYFUxrZn3s/view?usp=sharing">Click</a></h3>
+<div id="outline-container-org2555871" class="outline-3">
+<h3 id="org2555871"><a href="https://drive.gogle.como/file/d/1AGHa8hmQUjBmY9CA_3bj3vCYFUxrZn3s/view?usp=sharing">Click</a></h3>
 </div>
 </div>
-<div id="outline-container-orge7f14cd" class="outline-2">
-<h2 id="orge7f14cd">Reach me out</h2>
-<div class="outline-text-2" id="text-orge7f14cd">
+<div id="outline-container-orgf66f5cb" class="outline-2">
+<h2 id="orgf66f5cb">Reach me out</h2>
+<div class="outline-text-2" id="text-orgf66f5cb">
 <ul class="org-ul">
 <li>If you have any questions or would like to connect, please don't hesitate to reach out to me. You can find me on:
 <ul class="org-ul">
@@ -61,7 +60,7 @@
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
 </div>
 </body>
 </html>

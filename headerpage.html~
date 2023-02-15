@@ -6,33 +6,33 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
 </head>
 <body>
-<div id="content">
-<div id="table-of-contents">
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org137a28a">about me</a></li>
-<li><a href="#org73f48f3">knowledge base</a></li>
-<li><a href="#org4d95de7">philosoohy</a></li>
+<li><a href="#orgd0d7e4d">about me</a></li>
+<li><a href="#orgac505d2">knowledge base</a></li>
+<li><a href="#org2218adf">philosoohy</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org137a28a" class="outline-2">
-<h2 id="org137a28a">about me</h2>
+<div id="outline-container-orgd0d7e4d" class="outline-2">
+<h2 id="orgd0d7e4d">about me</h2>
 </div>
-<div id="outline-container-org73f48f3" class="outline-2">
-<h2 id="org73f48f3">knowledge base</h2>
+<div id="outline-container-orgac505d2" class="outline-2">
+<h2 id="orgac505d2">knowledge base</h2>
 </div>
-<div id="outline-container-org4d95de7" class="outline-2">
-<h2 id="org4d95de7">philosoohy</h2>
+<div id="outline-container-org2218adf" class="outline-2">
+<h2 id="org2218adf">philosoohy</h2>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
 </div>
 </body>
 </html>

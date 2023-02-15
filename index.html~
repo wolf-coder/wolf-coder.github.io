@@ -6,30 +6,29 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>A Dev thing in the AIR</title>
-<meta name="generator" content="Org mode" />
-<meta name="description" content="Header"
- />
-<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<meta name="description" content="Header" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/htmlize.css">
+<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/readtheorg.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://distro.tube/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://distro.tube/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">A Dev thing in the AIR</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga712c64">About Me</a></li>
-<li><a href="#orgb76513a">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</a>
+<li><a href="#org88704cb">About Me</a></li>
+<li><a href="#org6646223">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</a>
 <ul>
-<li><a href="#orgd00db1d">Airbnb Clone</a></li>
-<li><a href="#org53e5370">Object Detection</a></li>
-<li><a href="#org8108bf0">Neural Style Transfer</a></li>
-<li><a href="#org8de394d">Time Series Analysis</a></li>
+<li><a href="#org59e473a">Airbnb Clone</a></li>
+<li><a href="#orge85057b">Object Detection</a></li>
+<li><a href="#orgcc0ffad">Neural Style Transfer</a></li>
+<li><a href="#orgd33dfd4">Time Series Analysis</a></li>
 </ul>
 </li>
 </ul>
@@ -43,9 +42,9 @@
   </div>
 </div>
 
-<div id="outline-container-orga712c64" class="outline-2">
-<h2 id="orga712c64">About Me</h2>
-<div class="outline-text-2" id="text-orga712c64">
+<div id="outline-container-org88704cb" class="outline-2">
+<h2 id="org88704cb">About Me</h2>
+<div class="outline-text-2" id="text-org88704cb">
 <ul class="org-ul">
 <li>Greetings and salutations! I'm Fakhri, a software engineer who moonlights as a machine learning wizard. My goal in life is to use technology to solve problems and make the world a better place, one line of code at a time.</li>
 
@@ -58,40 +57,40 @@
 </div>
 </div>
 
-<div id="outline-container-orgb76513a" class="outline-2">
-<h2 id="orgb76513a">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</h2>
-<div class="outline-text-2" id="text-orgb76513a">
+<div id="outline-container-org6646223" class="outline-2">
+<h2 id="org6646223">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</h2>
+<div class="outline-text-2" id="text-org6646223">
 </div>
-<div id="outline-container-orgd00db1d" class="outline-3">
-<h3 id="orgd00db1d">Airbnb Clone</h3>
-<div class="outline-text-3" id="text-orgd00db1d">
+<div id="outline-container-org59e473a" class="outline-3">
+<h3 id="org59e473a">Airbnb Clone</h3>
+<div class="outline-text-3" id="text-org59e473a">
 <ul class="org-ul">
 <li>This project involved developing a web-based application that mimics the functionality of the popular online marketplace for short-term rentals, Airbnb. I implemented features such as user authentication, property listings, search functionality, and reservations, resulting in a user-friendly and functional platform for short-term rental booking.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org53e5370" class="outline-3">
-<h3 id="org53e5370">Object Detection</h3>
-<div class="outline-text-3" id="text-org53e5370">
+<div id="outline-container-orge85057b" class="outline-3">
+<h3 id="orge85057b">Object Detection</h3>
+<div class="outline-text-3" id="text-orge85057b">
 <ul class="org-ul">
 <li>This project involved developing a model for object detection using deep learning techniques. I implemented object detection algorithms to detect objects in images and videos.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8108bf0" class="outline-3">
-<h3 id="org8108bf0">Neural Style Transfer</h3>
-<div class="outline-text-3" id="text-org8108bf0">
+<div id="outline-container-orgcc0ffad" class="outline-3">
+<h3 id="orgcc0ffad">Neural Style Transfer</h3>
+<div class="outline-text-3" id="text-orgcc0ffad">
 <ul class="org-ul">
 <li>This project is about using deep learning techniques to transfer the style of one image to another. I implemented neural style transfer algorithms to create new and unique images.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8de394d" class="outline-3">
-<h3 id="org8de394d">Time Series Analysis</h3>
-<div class="outline-text-3" id="text-org8de394d">
+<div id="outline-container-orgd33dfd4" class="outline-3">
+<h3 id="orgd33dfd4">Time Series Analysis</h3>
+<div class="outline-text-3" id="text-orgd33dfd4">
 <ul class="org-ul">
 <li>This project is about analyzing time-series data using Recurrent Neural Networks (RNNs). I built RNN models and applied them to analyze time-series data and make predictions.</li>
 </ul>
@@ -100,7 +99,7 @@
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
 </div>
 </body>
 </html>
