@@ -137,9 +137,9 @@ Keyboard = driver.find_element(By.CSS_SELECTOR, "#main-wrap > main > div.round__
   #+end_src
 
 * Ethical Implications:
-- (Privacy): audio processing is done on the client side so there's no relevance in the terms of the user's privacy.
+- *Privacy*: audio processing is done on the client side so there's no relevance in the terms of the user's privacy.
 
-- (Fair Use): The solution utilizes the Lichess API and requires users to have a Lichess account. It is important to ensure that the solution is used in accordance with Lichess terms of service and that users are not using the solution to cheat or gain an unfair advantage.
+- *Fair Use*: The solution utilizes the Lichess API and requires users to have a Lichess account. It is important to ensure that the solution is used in accordance with Lichess terms of service and that users are not using the solution to cheat or gain an unfair advantage.
 
 
 * Final words and Next Steps of the Project:
