@@ -35,7 +35,7 @@
 
 - For our chess domain-oriented project, Obtaining a text containing spoken chess moves wasn't hard. While it could be auto-generated, I had that done during a step on which I was learning Kaldi:
   + [[https://www.pgnmentor.com/][pgnmentor]] is home to the best collection of PGN files, which are free to access and contain over a million Grandmaster games. 
-  +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog post [[[file:PGN_Preperation.org][Processing PGNs, Get spoken notations]]].
+  +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog post [[[https://wolf-coder.github.io/PGN_Preperation.html][Processing PGNs, Get spoken notations]]].
 
 **** Vosk: Updating recognizer vocabulary in runtime
 - Vosk allows the model to update its vocabulary during runtime. You can define the list of possible words or phrases as a JSON list.

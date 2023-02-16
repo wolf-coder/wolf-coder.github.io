@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>About Me</title>
 <meta name="description" content="Header" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/htmlize.css">
@@ -17,16 +17,12 @@
 </head>
 <body>
 <div id="content" class="content">
+<h1 class="title">About Me</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge407047">Resume</a>
-<ul>
-<li><a href="#org7deab5f">Click</a></li>
-</ul>
-</li>
-<li><a href="#orgbe5961c">Reach me out</a></li>
+<li><a href="#orgdbad324">h1: the king</a></li>
 </ul>
 </div>
 </div>
@@ -37,26 +33,9 @@
     <span class="topbar-menu"><a href="contact_me.html">Contact Me</a></span>
   </div>
 </div>
-<div id="outline-container-orge407047" class="outline-2">
-<h2 id="orge407047">Resume</h2>
-<div class="outline-text-2" id="text-orge407047">
-</div>
-<div id="outline-container-org7deab5f" class="outline-3">
-<h3 id="org7deab5f"><a href="https://drive.gogle.como/file/d/1AGHa8hmQUjBmY9CA_3bj3vCYFUxrZn3s/view?usp=sharing">Click</a></h3>
-</div>
-</div>
-<div id="outline-container-orgbe5961c" class="outline-2">
-<h2 id="orgbe5961c">Reach me out</h2>
-<div class="outline-text-2" id="text-orgbe5961c">
-<ul class="org-ul">
-<li>If you have any questions or would like to connect, please don't hesitate to reach out to me. You can find me on:
-<ul class="org-ul">
-<li><a href="https://www.linkedin.com/in/fakhri-baklouti/">LinkedIn</a></li>
-<li><a href="https://www.github.com/wolf-coder">GitHub</a></li>
-<li><a href="https://twitter.com/WolfCuore">Twitter</a></li>
-</ul></li>
-</ul>
-</div>
+
+<div id="outline-container-orgdbad324" class="outline-2">
+<h2 id="orgdbad324">h1: the king</h2>
 </div>
 </div>
 <div id="postamble" class="status">

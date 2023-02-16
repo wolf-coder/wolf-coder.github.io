@@ -22,13 +22,13 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge4e3450">About Me</a></li>
-<li><a href="#org5a67f57">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</a>
+<li><a href="#orga98dcd1">About Me</a></li>
+<li><a href="#org82c9c54">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</a>
 <ul>
-<li><a href="#org174c085">Airbnb Clone</a></li>
-<li><a href="#org25333bf">Object Detection</a></li>
-<li><a href="#org5401f33">Neural Style Transfer</a></li>
-<li><a href="#org5f58d3f">Time Series Analysis</a></li>
+<li><a href="#org983dafc">Airbnb Clone</a></li>
+<li><a href="#org6bfefcb">Object Detection</a></li>
+<li><a href="#orgb0abcf0">Neural Style Transfer</a></li>
+<li><a href="#org10bf171">Time Series Analysis</a></li>
 </ul>
 </li>
 </ul>
@@ -42,9 +42,9 @@
   </div>
 </div>
 
-<div id="outline-container-orge4e3450" class="outline-2">
-<h2 id="orge4e3450">About Me</h2>
-<div class="outline-text-2" id="text-orge4e3450">
+<div id="outline-container-orga98dcd1" class="outline-2">
+<h2 id="orga98dcd1">About Me</h2>
+<div class="outline-text-2" id="text-orga98dcd1">
 <ul class="org-ul">
 <li>Greetings and salutations! I'm Fakhri, a software engineer who moonlights as a machine learning wizard. My goal in life is to use technology to solve problems and make the world a better place, one line of code at a time.</li>
 
@@ -57,40 +57,40 @@
 </div>
 </div>
 
-<div id="outline-container-org5a67f57" class="outline-2">
-<h2 id="org5a67f57">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</h2>
-<div class="outline-text-2" id="text-org5a67f57">
+<div id="outline-container-org82c9c54" class="outline-2">
+<h2 id="org82c9c54">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</h2>
+<div class="outline-text-2" id="text-org82c9c54">
 </div>
-<div id="outline-container-org174c085" class="outline-3">
-<h3 id="org174c085">Airbnb Clone</h3>
-<div class="outline-text-3" id="text-org174c085">
+<div id="outline-container-org983dafc" class="outline-3">
+<h3 id="org983dafc">Airbnb Clone</h3>
+<div class="outline-text-3" id="text-org983dafc">
 <ul class="org-ul">
 <li>This project involved developing a web-based application that mimics the functionality of the popular online marketplace for short-term rentals, Airbnb. I implemented features such as user authentication, property listings, search functionality, and reservations, resulting in a user-friendly and functional platform for short-term rental booking.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org25333bf" class="outline-3">
-<h3 id="org25333bf">Object Detection</h3>
-<div class="outline-text-3" id="text-org25333bf">
+<div id="outline-container-org6bfefcb" class="outline-3">
+<h3 id="org6bfefcb">Object Detection</h3>
+<div class="outline-text-3" id="text-org6bfefcb">
 <ul class="org-ul">
 <li>This project involved developing a model for object detection using deep learning techniques. I implemented object detection algorithms to detect objects in images and videos.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5401f33" class="outline-3">
-<h3 id="org5401f33">Neural Style Transfer</h3>
-<div class="outline-text-3" id="text-org5401f33">
+<div id="outline-container-orgb0abcf0" class="outline-3">
+<h3 id="orgb0abcf0">Neural Style Transfer</h3>
+<div class="outline-text-3" id="text-orgb0abcf0">
 <ul class="org-ul">
 <li>This project is about using deep learning techniques to transfer the style of one image to another. I implemented neural style transfer algorithms to create new and unique images.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5f58d3f" class="outline-3">
-<h3 id="org5f58d3f">Time Series Analysis</h3>
-<div class="outline-text-3" id="text-org5f58d3f">
+<div id="outline-container-org10bf171" class="outline-3">
+<h3 id="org10bf171">Time Series Analysis</h3>
+<div class="outline-text-3" id="text-org10bf171">
 <ul class="org-ul">
 <li>This project is about analyzing time-series data using Recurrent Neural Networks (RNNs). I built RNN models and applied them to analyze time-series data and make predictions.</li>
 </ul>
