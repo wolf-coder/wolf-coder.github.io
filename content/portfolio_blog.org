@@ -35,7 +35,7 @@
 
 - For our chess domain-oriented project, Obtaining a text containing spoken chess moves wasn't hard. While it could be auto-generated, I had that done during a step on which I was learning Kaldi:
   + [[https://www.pgnmentor.com/][pgnmentor]] is home to the best collection of PGN files, which are free to access and contain over a million Grandmaster games. 
-  +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog page at [insert link].
+  +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog post [[[file:PGN_Preperation.org][Processing PGNs, Get spoken notations]]].
 
 **** Vosk: Updating recognizer vocabulary in runtime
 - Vosk allows the model to update its vocabulary during runtime. You can define the list of possible words or phrases as a JSON list.
@@ -43,7 +43,7 @@
   #+begin_src python
 recognizer.SetGrammar('["one zero one two three oh", "[unk]"]')    
   #+end_src
-- This will improve the speed and accuracy of the model's speech recognition, and it will return an unknown token [unk] if the user says something outside the specified vocabulary.
+- This will improve the speed and accuracy of the model's speech recognition, and it will return an unknown token =[unk]= if the user says something outside the specified vocabulary.
 - We will see later in a later section how this option is handy.
 
 ** Development, Testing and Improving :(~ 2 weeks)
@@ -69,13 +69,14 @@ recognizer.SetGrammar('["one zero one two three oh", "[unk]"]')
 [[./ORG_PICTURES/Architecture.png]]
 
 - Since the environment depicted in the diagram is _dynamic_, the most effective approach to gaining a comprehensive understanding of it, is to algorithmically represent its procedural form, along with additional elaboration for each step as follows:
-
+#+begin_src text
   1. Initialization of necessary components
   2. Repeat while TRUE:
      1. Wait until it's our turn to play, then update our model grammar with the possible moves to recognize.
      2. Get/process an audio speech.
      3. If TEXT corresponds to a legal move:
 	1. Execute the move.
+#+end_src
 
 **  1. Initialization
 - We first import our necessary libraries: sounddevice, vosk, selenium...ect:
@@ -135,6 +136,7 @@ Keyboard = driver.find_element(By.CSS_SELECTOR, "#main-wrap > main > div.round__
     Keyboard.clear()
     Keyboard.send_keys(TEXT)    
   #+end_src
+
 
 * Ethical Implications:
 - *Privacy*: audio processing is done on the client side so there's no relevance in the terms of the user's privacy.

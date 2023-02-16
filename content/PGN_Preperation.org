@@ -1,0 +1,153 @@
+#+title: Processing PGNs, Get spoken notations
+#+INCLUDE: "header.org"
+#+HTML_HEAD: <style>pre.src{background:#101416;color:#a29fa6;font-size:15px;} </style>
+#+HTML_HEAD: <style>pre.src.src-python span{background:#101416;color:#a865cc;} </style>
+* Intro
+- Some time ago, while I was working on my Chess-ASR project using Kaldi, I needed acoustic data of spoken chess moves. My idea was to extract these audio segments from YouTube videos that analyze chess games. Of course, I didn't want to do it manually by listening, waiting for the YouTuber to pronounce a move, extracting that segment, and labeling it with its corresponding FEN notation. That would be out of character for my lazy personality (Actually, you need thousands of segments). So, I thought about linking videos to their corresponding PGN files and building something that automatically extracts the audio segment of each move.
+
+- In this part of the blog series, I will demonstrate how I processed the PGN files using awk, Python, and Bash scripts.
+
+
+* PGN ?
+- PGN stands for Portable Game Notation which is a standard created for representing chess games data using ASCII text files.
+- Our PGNs were downloaded from the awesome [[http://www.pgnmentor.com/][pgnmentor]] website.
+- Each file contains multiple games. Example of a game representation:
+#+begin_src Text
+[Event "Pan-Am Intercollegiate"]
+[Site "chess.com INT"]
+[Date "2021.01.04"]
+[Round "2"]
+[White "Polgar-Shutzman,Leeam"]
+[Black "Eichner,Kobi"]
+[Result "1-0"]
+[WhiteElo ""]
+[BlackElo ""]
+[ECO "C46"]
+
+1.e4 e5 2.Nf3 Nc6 3.Nc3 d6 4.d4 exd4 5.Nxd4 Nxd4 6.Qxd4 c5 7.Qd1 Nf6 8.Bg5 Be7
+9.Bc4 O-O 10.O-O h6 11.Bh4 a6 12.a4 Bg4 13.f3 Bd7 14.a5 Bc6 15.Qd3 b6 16.axb6 Qxb6
+17.Kh1 a5 18.b3 Nxe4 19.Bxe7 Rfe8 20.fxe4 Rxe7 21.Qxd6 Rd7 22.Qf4 Rf8 23.Rad1 Re7
+24.Nd5 Bxd5 25.Rxd5 Kh8 26.Rd6 Qc7 27.Rf3 g5 28.Rxh6+ Kg7 29.Qxg5+  1-0
+#+end_src
+- PGN text begins with a set of "tag pairs," which are lines enclosed between two brackets. In my project, it was used in SQL database preparation, but that is a story for another blog post. Today, we will focus on the =Movetext= part. You can read about its description [[https://en.wikipedia.org/wiki/Portable_Game_Notation#Movetext][here]]. We want to convert the moves into their spoken version. For example:
+  - `Bxe7` => `Bishop takes on e seven`
+  - `Nf3`  => `Knight f three`
+- For this task, I used Bash scripting, AWK, and Python. The work can be done using any of the three mentioned programming languages, and it is probably recommended to use only one language. However, I wanted to sharpen my knowledge of these three languages by using them whenever there is an opportunity, and no harm can be done.
+
+* The whole Thing in a bash-script
+- The algorithms in our script is:
+  #+begin_src shell
+    for every file.pgn:
+	AWK: extract the notations to a file.not  
+
+    for every file.not:
+	Python: Convert the notation to its spoken version to file.spoken
+  #+end_src
+- Of course, I am aware that we can reduce the complexity by half and get our .spoken files using a single loop, but we will need separate .not and .spoken files when I show you the database work in another blog post.
+
+** The AWK script
+- AWK script file: =Cleaning.awk=:
+#+begin_src awk
+# Ignore empty lines and lines starting with `[`
+($0 !~ /\[/) && (NF > 0) {
+    # Loop through each field of the line
+    for (i = 1; i <= NF; i++) {
+        # Split the field by period character
+        nFields = split($i, fields, ".")
+        
+        # Ignore the score by checking if the last field contains a hyphen
+        if (index(fields[nFields], "-") == 0) {
+            # Print the last field
+            print fields[nFields]
+        }
+    }
+}
+#+end_src
+*** Usage:
+#+begin_src shell
+awk -v RS='\r\n' -f Cleaning.awk file.pgn > file.not
+#+end_src
+- The RS='\r\n' is to solve what we call a record separator problem, where we have to specify it for our own OS (Unix-based). Check [[https://stackoverflow.com/questions/13069905/awk-print-is-adding-a-control-m-character-at-end-of-line][here]].
+
+** the Python parser
+- Python script: =Parser.py=
+#+begin_src python
+import sys
+
+# Check if the correct number of arguments is provided
+if len(sys.argv) != 3:
+    print("Usage: Parser.py `file.not` `output.Spoken`")
+    sys.exit(1)
+
+# Get the input and output file names from the command line arguments
+file_not = sys.argv[1] # AWK output file
+output_spoken = sys.argv[2]
+
+# Define dictionaries for mapping pieces and numbers to spoken words
+Piece = {'K': 'king', 'Q': 'queen', 'N': 'knight', 'R': 'rook', 'B': 'bishop'}
+Number = {'1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'five', '6': 'six', '7': 'seven', '8': 'eight'}
+
+def parse_move(move):
+    """
+    Function that takes a move and transcribes it to spoken text.
+    Args:
+        move (str): string representing the PGN move
+    Returns:
+        Parsed (str): spoken text format for the PGN move
+    """
+    Parsed = ""
+    for char in move:
+        if char == 'O':
+            if len(move) == 3:
+                Parsed += "short castling"
+            else:
+                Parsed += "long castling"
+            break
+        elif char == 'x':
+            Parsed += 'takes on '
+        elif char == '+':
+            Parsed += 'check'
+        elif char.isupper():
+            Parsed += Piece[char] + " "
+        elif char.islower():
+            Parsed += char + " "
+        elif char.isdigit():
+            Parsed += Number[char]+ " "
+        elif char == '#':
+            Parsed += "Checkmate"
+    Parsed += "\n"
+    return " ".join(Parsed.split()) + "\n"
+
+# Open the output file for writing
+with open(output_spoken, "w") as spf:
+    # Open the input file for reading
+    with open(file_not, "r") as af:
+        # Loop through each line of the input file
+        for line in af:
+            # Write the parsed move to the output file
+            spf.write(parse_move(line))
+#+end_src
+
+*** Usage
+#+begin_src shell
+python Parser.py file.not file.spoken
+#+end_src
+
+** The final bash-script
+- Suppose our pgn files are located in the _DATA_ directory 
+#+begin_src shell
+for file in $(ls DATA | grep pgn)
+do
+    # get filename (without extension)
+    f=$(awk -F. '{print $1}'<<< "DATA/"$file)
+
+    awk -v RS='\r\n' -f Cleaning.awk $f".pgn" >$f".not"
+done
+
+for file in $(ls DATA | grep pgn)
+do
+    echo $f
+    f=$(awk -F. '{print $1}'<<< "DATA_zip/"$file)
+    python Parser.py $f".not" $f".spoken"
+done  
+#+end_src
