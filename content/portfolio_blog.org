@@ -2,6 +2,7 @@
 #+INCLUDE: "header.org"
 #+HTML_HEAD: <style>pre.src{background:#101416;color:#a29fa6;font-size:15px;} </style>
 #+HTML_HEAD: <style>pre.src.src-python span{background:#101416;color:#a865cc;} </style>
+#+OPTIONS: broken-links:t
 * Introduction:
 - Online chess has experienced a surge in popularity in recent years due to a combination of factors such the growth of online gaming communities, and the increase in online chess platforms. This has led to an increase in the number of players, as well as a rise in the level of competition, making online chess a highly entertaining and challenging experience for all involved.
 
@@ -35,7 +36,7 @@
 
 - For our chess domain-oriented project, Obtaining a text containing spoken chess moves wasn't hard. While it could be auto-generated, I had that done during a step on which I was learning Kaldi:
   + [[https://www.pgnmentor.com/][pgnmentor]] is home to the best collection of PGN files, which are free to access and contain over a million Grandmaster games. 
-  +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog post [[[https://wolf-coder.github.io/PGN_Preperation.html][Processing PGNs, Get spoken notations]]].
+  +  Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog post  [[https://wolf-coder.github.io/PGN_Preperation.html][Processing PGNs, Get spoken notations]].
 
 **** Vosk: Updating recognizer vocabulary in runtime
 - Vosk allows the model to update its vocabulary during runtime. You can define the list of possible words or phrases as a JSON list.
