@@ -25,32 +25,32 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1513b9f">Introduction:</a></li>
-<li><a href="#orga854be3">Overview:</a></li>
-<li><a href="#org2fb4662">Timeline of Project Progression:</a>
+<li><a href="#orgb57e2a3">Introduction:</a></li>
+<li><a href="#org216c0a8">Overview:</a></li>
+<li><a href="#org1b8893e">Timeline of Project Progression:</a>
 <ul>
-<li><a href="#orga8333e5">Planning and Research: ( ~ 4 week)</a>
+<li><a href="#orgde70a68">Planning and Research: ( ~ 4 week)</a>
 <ul>
-<li><a href="#org530c89a">The Vosk ASR toolkit</a></li>
+<li><a href="#orgdc6efb5">The Vosk ASR toolkit</a></li>
 </ul>
 </li>
-<li><a href="#org30adc89">Development, Testing and Improving :(~ 2 weeks)</a></li>
+<li><a href="#orge6941f3">Development, Testing and Improving :(~ 2 weeks)</a></li>
 </ul>
 </li>
-<li><a href="#org834ce9a">Architecture:</a>
+<li><a href="#org631b200">Architecture:</a>
 <ul>
-<li><a href="#orgba94dce">1. Initialization</a></li>
-<li><a href="#orgd871076">2. Repeat while TRUE:</a>
+<li><a href="#orgf3bd767">1. Initialization</a></li>
+<li><a href="#org0a36e77">2. Repeat while TRUE:</a>
 <ul>
-<li><a href="#orgfd8c55a">1. Wait for our turn | Update the model grammar</a></li>
-<li><a href="#org3057a88">2. Get an audio speech and extract its TEXT.</a></li>
-<li><a href="#org1155e4e">3. If TEXT corresponds to a legal move:</a></li>
+<li><a href="#orga2406d8">1. Wait for our turn | Update the model grammar</a></li>
+<li><a href="#orge0ed601">2. Get an audio speech and extract its TEXT.</a></li>
+<li><a href="#org53aeec0">3. If TEXT corresponds to a legal move:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgc665106">Ethical Implications:</a></li>
-<li><a href="#org9fecf9d">Final words and Next Steps of the Project:</a></li>
+<li><a href="#org3ef5a26">Ethical Implications:</a></li>
+<li><a href="#org0678a54">Final words and Next Steps of the Project:</a></li>
 </ul>
 </div>
 </div>
@@ -61,9 +61,9 @@
     <span class="topbar-menu"><a href="contact_me.html">Contact Me</a></span>
   </div>
 </div>
-<div id="outline-container-org1513b9f" class="outline-2">
-<h2 id="org1513b9f">Introduction:</h2>
-<div class="outline-text-2" id="text-org1513b9f">
+<div id="outline-container-orgb57e2a3" class="outline-2">
+<h2 id="orgb57e2a3">Introduction:</h2>
+<div class="outline-text-2" id="text-orgb57e2a3">
 <ul class="org-ul">
 <li>Online chess has experienced a surge in popularity in recent years due to a combination of factors such the growth of online gaming communities, and the increase in online chess platforms. This has led to an increase in the number of players, as well as a rise in the level of competition, making online chess a highly entertaining and challenging experience for all involved.</li>
 
@@ -72,9 +72,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orga854be3" class="outline-2">
-<h2 id="orga854be3">Overview:</h2>
-<div class="outline-text-2" id="text-orga854be3">
+<div id="outline-container-org216c0a8" class="outline-2">
+<h2 id="org216c0a8">Overview:</h2>
+<div class="outline-text-2" id="text-org216c0a8">
 <ul class="org-ul">
 <li>I have implemented speech-to-text technology using Vosk, an offline open source speech recognition toolkit build on top of Kaldi, allowing users to make moves on the chessboard by simply speaking.</li>
 
@@ -84,27 +84,27 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2fb4662" class="outline-2">
-<h2 id="org2fb4662">Timeline of Project Progression:</h2>
-<div class="outline-text-2" id="text-org2fb4662">
+<div id="outline-container-org1b8893e" class="outline-2">
+<h2 id="org1b8893e">Timeline of Project Progression:</h2>
+<div class="outline-text-2" id="text-org1b8893e">
 </div>
-<div id="outline-container-orga8333e5" class="outline-3">
-<h3 id="orga8333e5">Planning and Research: ( ~ 4 week)</h3>
-<div class="outline-text-3" id="text-orga8333e5">
+<div id="outline-container-orgde70a68" class="outline-3">
+<h3 id="orgde70a68">Planning and Research: ( ~ 4 week)</h3>
+<div class="outline-text-3" id="text-orgde70a68">
 <ul class="org-ul">
 <li>I started with the <a href="https://www.tensorflow.org/tutorials/audio/simple_audio">Tensorflow Simple Audio Recognition</a> tutorial to involve myself in ASR. It was challenging to acquaint myself with the various basic components of ASR, such as preprocessing audio files in the <code>WAV</code> format, converting to <code>spectrograms</code>, training and evaluating ASR models.</li>
 </ul>
 </div>
-<div id="outline-container-org530c89a" class="outline-4">
-<h4 id="org530c89a">The Vosk ASR toolkit</h4>
-<div class="outline-text-4" id="text-org530c89a">
+<div id="outline-container-orgdc6efb5" class="outline-4">
+<h4 id="orgdc6efb5">The Vosk ASR toolkit</h4>
+<div class="outline-text-4" id="text-orgdc6efb5">
 <ul class="org-ul">
 <li>Choosing an ASR toolkit was a crucial task. There are several potential choices of open-source toolkits available for building a recognition system, including Sphinx-4 (written in Java) and the RWTH (written in C++). I spent a few weeks studying a solution to my problem and eventually came across <code>Kaldi</code>, an ASR toolkit. While it was the best tool available at the time, it was challenging to comprehend, train models, and build client applications. However, after more research, I discovered <code>Vosk</code>, which simplifies the use of Kaldi and includes a pre-trained small english model that could solve my problem. You can use it with different platforms and programming languages.</li>
 </ul>
 </div>
 <ul class="org-ul">
-<li><a id="org5c1280c"></a>A Diagram of the Kaldi model used in vosk<br />
-<div class="outline-text-5" id="text-org5c1280c">
+<li><a id="org571afe1"></a>A Diagram of the Kaldi model used in vosk<br />
+<div class="outline-text-5" id="text-org571afe1">
 
 <div class="figure">
 <p><img src="./ORG_PICTURES/Vosk_Archi.png" alt="Vosk_Archi.png" />
@@ -127,22 +127,22 @@
 </div>
 </li>
 
-<li><a id="org9cc4562"></a>Vosk: Updating the language model<br />
-<div class="outline-text-5" id="text-org9cc4562">
+<li><a id="orgd6a902b"></a>Vosk: Updating the language model<br />
+<div class="outline-text-5" id="text-orgd6a902b">
 <ul class="org-ul">
 <li>Vosk allow adjusting the probability of the words to improve the recognition. For that We have to <a href="https://alphacephei.com/vosk/adaptation">recompile the language model from a text</a>.</li>
 
 <li>For our chess domain-oriented project, Obtaining a text containing spoken chess moves wasn't hard. While it could be auto-generated, I had that done during a step on which I was learning Kaldi:
 <ul class="org-ul">
 <li><a href="https://www.pgnmentor.com/">pgnmentor</a> is home to the best collection of PGN files, which are free to access and contain over a million Grandmaster games.</li>
-<li>Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog page at [insert link].</li>
+<li>Preprocessing these files to obtain the desired information was an enjoyable task that I accomplished using AWK, bash scripting, and Python. You can view this work on my GitHub blog post  <a href="https://wolf-coder.github.io/PGN_Preperation.html">Processing PGNs, Get spoken notations</a>.</li>
 </ul></li>
 </ul>
 </div>
 </li>
 
-<li><a id="orgac05e1a"></a>Vosk: Updating recognizer vocabulary in runtime<br />
-<div class="outline-text-5" id="text-orgac05e1a">
+<li><a id="org57da131"></a>Vosk: Updating recognizer vocabulary in runtime<br />
+<div class="outline-text-5" id="text-org57da131">
 <ul class="org-ul">
 <li>Vosk allows the model to update its vocabulary during runtime. You can define the list of possible words or phrases as a JSON list.</li>
 <li><p>
@@ -152,7 +152,7 @@ Here's a python code snippet example:
 <pre class="src src-python">recognizer.SetGrammar(<span style="font-style: italic;">'["one zero one two three oh", "[unk]"]'</span>)    
 </pre>
 </div></li>
-<li>This will improve the speed and accuracy of the model's speech recognition, and it will return an unknown token [unk] if the user says something outside the specified vocabulary.</li>
+<li>This will improve the speed and accuracy of the model's speech recognition, and it will return an unknown token <code>[unk]</code> if the user says something outside the specified vocabulary.</li>
 <li>We will see later in a later section how this option is handy.</li>
 </ul>
 </div>
@@ -161,9 +161,9 @@ Here's a python code snippet example:
 </div>
 </div>
 
-<div id="outline-container-org30adc89" class="outline-3">
-<h3 id="org30adc89">Development, Testing and Improving :(~ 2 weeks)</h3>
-<div class="outline-text-3" id="text-org30adc89">
+<div id="outline-container-orge6941f3" class="outline-3">
+<h3 id="orge6941f3">Development, Testing and Improving :(~ 2 weeks)</h3>
+<div class="outline-text-3" id="text-orge6941f3">
 <ul class="org-ul">
 <li>At that point, I had an ASR model that was "fine-tuned" for chess.</li>
 <li>The next step was to integrate the model into a "platform" as the intermediary between the microphone and the chessboard environment [a lichess online game].</li>
@@ -188,9 +188,9 @@ Note: Although Selenium is not specifically designed for such a purpose, as I me
 </div>
 </div>
 
-<div id="outline-container-org834ce9a" class="outline-2">
-<h2 id="org834ce9a">Architecture:</h2>
-<div class="outline-text-2" id="text-org834ce9a">
+<div id="outline-container-org631b200" class="outline-2">
+<h2 id="org631b200">Architecture:</h2>
+<div class="outline-text-2" id="text-org631b200">
 <ul class="org-ul">
 <li>A diagram of the architecture is included below:</li>
 </ul>
@@ -201,26 +201,22 @@ Note: Although Selenium is not specifically designed for such a purpose, as I me
 </div>
 
 <ul class="org-ul">
-<li>Since the environment depicted in the diagram is <span class="underline">dynamic</span>, the most effective approach to gaining a comprehensive understanding of it, is to algorithmically represent its procedural form, along with additional elaboration for each step as follows:
-
-<ol class="org-ol">
-<li>Initialization of necessary components</li>
-<li>Repeat while TRUE:
-<ol class="org-ol">
-<li>Wait until it's our turn to play, then update our model grammar with the possible moves to recognize.</li>
-<li>Get/process an audio speech.</li>
-<li>If TEXT corresponds to a legal move:
-<ol class="org-ol">
-<li>Execute the move.</li>
-</ol></li>
-</ol></li>
-</ol></li>
+<li>Since the environment depicted in the diagram is <span class="underline">dynamic</span>, the most effective approach to gaining a comprehensive understanding of it, is to algorithmically represent its procedural form, along with additional elaboration for each step as follows:</li>
 </ul>
+<div class="org-src-container">
+<pre class="src src-text">1. Initialization of necessary components
+2. Repeat while TRUE:
+   1. Wait until it's our turn to play, then update our model grammar with the possible moves to recognize.
+   2. Get/process an audio speech.
+   3. If TEXT corresponds to a legal move:
+      1. Execute the move.
+</pre>
+</div>
 </div>
 
-<div id="outline-container-orgba94dce" class="outline-3">
-<h3 id="orgba94dce">1. Initialization</h3>
-<div class="outline-text-3" id="text-orgba94dce">
+<div id="outline-container-orgf3bd767" class="outline-3">
+<h3 id="orgf3bd767">1. Initialization</h3>
+<div class="outline-text-3" id="text-orgf3bd767">
 <ul class="org-ul">
 <li><p>
 We first import our necessary libraries: sounddevice, vosk, selenium&#x2026;ect:
@@ -245,9 +241,9 @@ An important concept to highlight here is the audio sample rate. It refers to th
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd871076" class="outline-3">
-<h3 id="orgd871076">2. Repeat while TRUE:</h3>
-<div class="outline-text-3" id="text-orgd871076">
+<div id="outline-container-org0a36e77" class="outline-3">
+<h3 id="org0a36e77">2. Repeat while TRUE:</h3>
+<div class="outline-text-3" id="text-org0a36e77">
 <ul class="org-ul">
 <li><p>
 This "While True" creates an infinite loop with a callback function that places the audio data in a queue (check the code in the GitHub page):
@@ -267,9 +263,9 @@ This "While True" creates an infinite loop with a callback function that places 
 </div></li>
 </ul>
 </div>
-<div id="outline-container-orgfd8c55a" class="outline-4">
-<h4 id="orgfd8c55a">1. Wait for our turn | Update the model grammar</h4>
-<div class="outline-text-4" id="text-orgfd8c55a">
+<div id="outline-container-orga2406d8" class="outline-4">
+<h4 id="orga2406d8">1. Wait for our turn | Update the model grammar</h4>
+<div class="outline-text-4" id="text-orga2406d8">
 <ul class="org-ul">
 <li>The First part is easily accomplished by setting up a `selenium Listener` function that listens to an HTML element that indicates whether it is our turn to play.</li>
 <li><p>
@@ -283,9 +279,9 @@ recognizer.SetGrammar(grammar)
 </ul>
 </div>
 </div>
-<div id="outline-container-org3057a88" class="outline-4">
-<h4 id="org3057a88">2. Get an audio speech and extract its TEXT.</h4>
-<div class="outline-text-4" id="text-org3057a88">
+<div id="outline-container-orge0ed601" class="outline-4">
+<h4 id="orge0ed601">2. Get an audio speech and extract its TEXT.</h4>
+<div class="outline-text-4" id="text-orge0ed601">
 <ul class="org-ul">
 <li><p>
 Our model engine takes care of processing the audio data and extract the text from it:
@@ -299,9 +295,9 @@ Our model engine takes care of processing the audio data and extract the text fr
 </ul>
 </div>
 </div>
-<div id="outline-container-org1155e4e" class="outline-4">
-<h4 id="org1155e4e">3. If TEXT corresponds to a legal move:</h4>
-<div class="outline-text-4" id="text-org1155e4e">
+<div id="outline-container-org53aeec0" class="outline-4">
+<h4 id="org53aeec0">3. If TEXT corresponds to a legal move:</h4>
+<div class="outline-text-4" id="text-org53aeec0">
 <ul class="org-ul">
 <li>Since we are streaming the audio, I am using the following criteria to identify a chess move from the captured chunk:
 <ol class="org-ol">
@@ -316,8 +312,8 @@ Our model engine takes care of processing the audio data and extract the text fr
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org7988058"></a>1. Execute the move<br />
-<div class="outline-text-5" id="text-org7988058">
+<li><a id="org0afb0af"></a>1. Execute the move<br />
+<div class="outline-text-5" id="text-org0afb0af">
 <ul class="org-ul">
 <li><p>
 Fortunately, Lichess allows us to play chess moves using keyboard commands. We can control the input field with the send_keys method in Selenium.
@@ -336,9 +332,10 @@ Fortunately, Lichess allows us to play chess moves using keyboard commands. We c
 </div>
 </div>
 
-<div id="outline-container-orgc665106" class="outline-2">
-<h2 id="orgc665106">Ethical Implications:</h2>
-<div class="outline-text-2" id="text-orgc665106">
+
+<div id="outline-container-org3ef5a26" class="outline-2">
+<h2 id="org3ef5a26">Ethical Implications:</h2>
+<div class="outline-text-2" id="text-org3ef5a26">
 <ul class="org-ul">
 <li><b>Privacy</b>: audio processing is done on the client side so there's no relevance in the terms of the user's privacy.</li>
 
@@ -348,9 +345,9 @@ Fortunately, Lichess allows us to play chess moves using keyboard commands. We c
 </div>
 
 
-<div id="outline-container-org9fecf9d" class="outline-2">
-<h2 id="org9fecf9d">Final words and Next Steps of the Project:</h2>
-<div class="outline-text-2" id="text-org9fecf9d">
+<div id="outline-container-org0678a54" class="outline-2">
+<h2 id="org0678a54">Final words and Next Steps of the Project:</h2>
+<div class="outline-text-2" id="text-org0678a54">
 <ul class="org-ul">
 <li>This project is a step towards creating a comprehensive desktop/mobile chess application utilizing advanced machine learning solutions and features.</li>
 <li>In this project, I succeeded in scoring efficient Accuracy and Time Inference results, making Vosk my choice to move forward for voice-command chess moves.</li>
