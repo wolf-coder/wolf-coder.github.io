@@ -45,21 +45,21 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org53b11a8">Intro</a></li>
-<li><a href="#orgfd09bd0">PGN ?</a></li>
-<li><a href="#orge81aa25">The whole Thing in a bash-script</a>
+<li><a href="#org0684dba">Intro</a></li>
+<li><a href="#org0d3c191">PGN ?</a></li>
+<li><a href="#orge6540d4">The whole Thing in a bash-script</a>
 <ul>
-<li><a href="#org4458559">The AWK script</a>
+<li><a href="#org930bc41">The AWK script</a>
 <ul>
-<li><a href="#orgc8d76e5">Usage:</a></li>
+<li><a href="#org2a96bbc">Usage:</a></li>
 </ul>
 </li>
-<li><a href="#org5ea7f53">the Python parser</a>
+<li><a href="#orga4ec663">the Python parser</a>
 <ul>
-<li><a href="#org15970e5">Usage</a></li>
+<li><a href="#orgb581cf9">Usage</a></li>
 </ul>
 </li>
-<li><a href="#org213f0fa">The final bash-script</a></li>
+<li><a href="#org3e2dbe8">The final bash-script</a></li>
 </ul>
 </li>
 </ul>
@@ -72,9 +72,9 @@
     <span class="topbar-menu"><a href="contact_me.html">Contact Me</a></span>
   </div>
 </div>
-<div id="outline-container-org53b11a8" class="outline-2">
-<h2 id="org53b11a8">Intro</h2>
-<div class="outline-text-2" id="text-org53b11a8">
+<div id="outline-container-org0684dba" class="outline-2">
+<h2 id="org0684dba">Intro</h2>
+<div class="outline-text-2" id="text-org0684dba">
 <ul class="org-ul">
 <li>Some time ago, while I was working on my Chess-ASR project using Kaldi, I needed acoustic data of spoken chess moves. My idea was to extract these audio segments from YouTube videos that analyze chess games. Of course, I didn't want to do it manually by listening, waiting for the YouTuber to pronounce a move, extracting that segment, and labeling it with its corresponding FEN notation. That would be out of character for my lazy personality (Actually, you need thousands of segments). So, I thought about linking videos to their corresponding PGN files and building something that automatically extracts the audio segment of each move.</li>
 
@@ -84,9 +84,9 @@
 </div>
 
 
-<div id="outline-container-orgfd09bd0" class="outline-2">
-<h2 id="orgfd09bd0">PGN ?</h2>
-<div class="outline-text-2" id="text-orgfd09bd0">
+<div id="outline-container-org0d3c191" class="outline-2">
+<h2 id="org0d3c191">PGN ?</h2>
+<div class="outline-text-2" id="text-org0d3c191">
 <ul class="org-ul">
 <li>PGN stands for Portable Game Notation which is a standard created for representing chess games data using ASCII text files.</li>
 <li>Our PGNs were downloaded from the awesome <a href="http://www.pgnmentor.com/">pgnmentor</a> website.</li>
@@ -121,9 +121,9 @@
 </div>
 </div>
 
-<div id="outline-container-orge81aa25" class="outline-2">
-<h2 id="orge81aa25">The whole Thing in a bash-script</h2>
-<div class="outline-text-2" id="text-orge81aa25">
+<div id="outline-container-orge6540d4" class="outline-2">
+<h2 id="orge6540d4">The whole Thing in a bash-script</h2>
+<div class="outline-text-2" id="text-orge6540d4">
 <ul class="org-ul">
 <li><p>
 The algorithms in our script is:
@@ -140,9 +140,9 @@ The algorithms in our script is:
 </ul>
 </div>
 
-<div id="outline-container-org4458559" class="outline-3">
-<h3 id="org4458559">The AWK script</h3>
-<div class="outline-text-3" id="text-org4458559">
+<div id="outline-container-org930bc41" class="outline-3">
+<h3 id="org930bc41">The AWK script</h3>
+<div class="outline-text-3" id="text-org930bc41">
 <ul class="org-ul">
 <li>AWK script file: <code>Cleaning.awk</code>:</li>
 </ul>
@@ -164,9 +164,9 @@ The algorithms in our script is:
 </pre>
 </div>
 </div>
-<div id="outline-container-orgc8d76e5" class="outline-4">
-<h4 id="orgc8d76e5">Usage:</h4>
-<div class="outline-text-4" id="text-orgc8d76e5">
+<div id="outline-container-org2a96bbc" class="outline-4">
+<h4 id="org2a96bbc">Usage:</h4>
+<div class="outline-text-4" id="text-org2a96bbc">
 <div class="org-src-container">
 <pre class="src src-shell">awk -v <span style="font-weight: bold; font-style: italic;">RS</span>=<span style="font-style: italic;">'\r\n'</span> -f Cleaning.awk file.pgn &gt; file.not
 </pre>
@@ -178,9 +178,9 @@ The algorithms in our script is:
 </div>
 </div>
 
-<div id="outline-container-org5ea7f53" class="outline-3">
-<h3 id="org5ea7f53">the Python parser</h3>
-<div class="outline-text-3" id="text-org5ea7f53">
+<div id="outline-container-orga4ec663" class="outline-3">
+<h3 id="orga4ec663">the Python parser</h3>
+<div class="outline-text-3" id="text-orga4ec663">
 <ul class="org-ul">
 <li>Python script: <code>Parser.py</code></li>
 </ul>
@@ -243,9 +243,9 @@ file_not = sys.argv[1] <span style="font-weight: bold; font-style: italic;"># </
 </div>
 </div>
 
-<div id="outline-container-org15970e5" class="outline-4">
-<h4 id="org15970e5">Usage</h4>
-<div class="outline-text-4" id="text-org15970e5">
+<div id="outline-container-orgb581cf9" class="outline-4">
+<h4 id="orgb581cf9">Usage</h4>
+<div class="outline-text-4" id="text-orgb581cf9">
 <div class="org-src-container">
 <pre class="src src-shell">python Parser.py file.not file.spoken
 </pre>
@@ -254,9 +254,9 @@ file_not = sys.argv[1] <span style="font-weight: bold; font-style: italic;"># </
 </div>
 </div>
 
-<div id="outline-container-org213f0fa" class="outline-3">
-<h3 id="org213f0fa">The final bash-script</h3>
-<div class="outline-text-3" id="text-org213f0fa">
+<div id="outline-container-org3e2dbe8" class="outline-3">
+<h3 id="org3e2dbe8">The final bash-script</h3>
+<div class="outline-text-3" id="text-org3e2dbe8">
 <ul class="org-ul">
 <li>Suppose our pgn files are located in the <span class="underline">DATA</span> directory</li>
 </ul>
