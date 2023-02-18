@@ -146,5 +146,10 @@ Keyboard = driver.find_element(By.CSS_SELECTOR, "#main-wrap > main > div.round__
 
 
 * Final words and Next Steps of the Project:
-- This project is a step towards creating a comprehensive desktop/mobile chess application utilizing advanced machine learning solutions and features.
 - In this project, I succeeded in scoring efficient Accuracy and Time Inference results, making Vosk my choice to move forward for voice-command chess moves.
+- This project is a step towards creating a comprehensive desktop/mobile chess application utilizing advanced machine learning solutions and features.
+
+- If you are interested in collaborating, sharing ideas, or making suggestions, please don't hesitate to contact me on:
+  - [[https://github.com/wolf-coder][Github]]
+  - [[https://www.linkedin.com/in/fakhri-baklouti][Linkedin]]
+  - [[mailto:cuore.fakhri@gmail.com][Email]]
