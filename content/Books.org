@@ -1,0 +1,9 @@
+#+title: Machine Learning Books
+#+INCLUDE: "header.org"
+
+=Status=: Under construction
+* The story
+- During taking my Machine Learning speciality at holberton school,
+- Machine learning isn't like learning programming
+  * It has a soul, that soul is called mathematics
+  * The majority of students take it as learning another algorithm

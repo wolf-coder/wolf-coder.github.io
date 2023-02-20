@@ -7,6 +7,8 @@
   <img src="logo.pgn"/>
   <div class="topbar-menu-container">
     <span class="topbar-menu"><a class="current" href="index.html">Welcome</a></span>
+    <span class="topbar-menu"><a href="Knowledge_Base.html">Knowledge Base</a></span>
+    <span class="topbar-menu"><a href="Books.html">Books</a></span>
     <span class="topbar-menu"><a href="contact_me.html">Contact Me</a></span>
   </div>
 </div>

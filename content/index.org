@@ -1,14 +1,8 @@
 #+title: A Dev thing in the AIR
 #+INCLUDE: "header.org"
-
+Status: =Under construction= 
 * About Me
-- Greetings and salutations! I'm Fakhri, a software engineer who moonlights as a machine learning wizard. My goal in life is to use technology to solve problems and make the world a better place, one line of code at a time.
 
-- I recently graduated with honors from the Holberton School of Software Engineering where I learned how to code faster than the speed of light. I'm a team player, have a razor-sharp wit, and I'm always up for a challenge.
-
-- If you want to see what I'm capable of, check out my GitHub page (link provided) or imagine a page full of impressive projects and code snippets. You can also visit my LinkedIn profile (link provided) where I list all my accomplishments and awards...ok, just kidding, it's a pretty standard profile.
-
-- If you're interested in connecting or have any questions, feel free to reach out through the contact form on my website or LinkedIn. I'll respond faster than you can say 'Fakhri Baklouti, software engineer extraordinaire!' Thanks for stopping by!
 
 * WIP Witty AI Wonders: A Lighthearted Look at some of my Projects
 
