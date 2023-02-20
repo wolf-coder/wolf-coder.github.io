@@ -22,13 +22,13 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf1e4e24">About Me</a></li>
-<li><a href="#org0a68529">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</a>
+<li><a href="#orge621cc0">About Me</a></li>
+<li><a href="#orgdd04e28">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</a>
 <ul>
-<li><a href="#org65e2236">Airbnb Clone</a></li>
-<li><a href="#orge65c769">Object Detection</a></li>
-<li><a href="#orgd158c27">Neural Style Transfer</a></li>
-<li><a href="#orgda5fef4">Time Series Analysis</a></li>
+<li><a href="#orgb35b50b">Airbnb Clone</a></li>
+<li><a href="#orgfd826f1">Object Detection</a></li>
+<li><a href="#orga6860d2">Neural Style Transfer</a></li>
+<li><a href="#org1dede1c">Time Series Analysis</a></li>
 </ul>
 </li>
 </ul>
@@ -46,55 +46,45 @@
 <p>
 Status: <code>Under construction</code> 
 </p>
-<div id="outline-container-orgf1e4e24" class="outline-2">
-<h2 id="orgf1e4e24">About Me</h2>
-<div class="outline-text-2" id="text-orgf1e4e24">
-<ul class="org-ul">
-<li>Greetings and salutations! I'm Fakhri, a software engineer who moonlights as a machine learning wizard. My goal in life is to use technology to solve problems and make the world a better place, one line of code at a time.</li>
-
-<li>I recently graduated with honors from the Holberton School of Software Engineering where I learned how to code faster than the speed of light. I'm a team player, have a razor-sharp wit, and I'm always up for a challenge.</li>
-
-<li>If you want to see what I'm capable of, check out my GitHub page (link provided) or imagine a page full of impressive projects and code snippets. You can also visit my LinkedIn profile (link provided) where I list all my accomplishments and awards&#x2026;ok, just kidding, it's a pretty standard profile.</li>
-
-<li>If you're interested in connecting or have any questions, feel free to reach out through the contact form on my website or LinkedIn. I'll respond faster than you can say 'Fakhri Baklouti, software engineer extraordinaire!' Thanks for stopping by!</li>
-</ul>
-</div>
+<div id="outline-container-orge621cc0" class="outline-2">
+<h2 id="orge621cc0">About Me</h2>
 </div>
 
-<div id="outline-container-org0a68529" class="outline-2">
-<h2 id="org0a68529">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</h2>
-<div class="outline-text-2" id="text-org0a68529">
+
+<div id="outline-container-orgdd04e28" class="outline-2">
+<h2 id="orgdd04e28">WIP Witty AI Wonders: A Lighthearted Look at some of my Projects</h2>
+<div class="outline-text-2" id="text-orgdd04e28">
 </div>
-<div id="outline-container-org65e2236" class="outline-3">
-<h3 id="org65e2236">Airbnb Clone</h3>
-<div class="outline-text-3" id="text-org65e2236">
+<div id="outline-container-orgb35b50b" class="outline-3">
+<h3 id="orgb35b50b">Airbnb Clone</h3>
+<div class="outline-text-3" id="text-orgb35b50b">
 <ul class="org-ul">
 <li>This project involved developing a web-based application that mimics the functionality of the popular online marketplace for short-term rentals, Airbnb. I implemented features such as user authentication, property listings, search functionality, and reservations, resulting in a user-friendly and functional platform for short-term rental booking.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge65c769" class="outline-3">
-<h3 id="orge65c769">Object Detection</h3>
-<div class="outline-text-3" id="text-orge65c769">
+<div id="outline-container-orgfd826f1" class="outline-3">
+<h3 id="orgfd826f1">Object Detection</h3>
+<div class="outline-text-3" id="text-orgfd826f1">
 <ul class="org-ul">
 <li>This project involved developing a model for object detection using deep learning techniques. I implemented object detection algorithms to detect objects in images and videos.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd158c27" class="outline-3">
-<h3 id="orgd158c27">Neural Style Transfer</h3>
-<div class="outline-text-3" id="text-orgd158c27">
+<div id="outline-container-orga6860d2" class="outline-3">
+<h3 id="orga6860d2">Neural Style Transfer</h3>
+<div class="outline-text-3" id="text-orga6860d2">
 <ul class="org-ul">
 <li>This project is about using deep learning techniques to transfer the style of one image to another. I implemented neural style transfer algorithms to create new and unique images.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgda5fef4" class="outline-3">
-<h3 id="orgda5fef4">Time Series Analysis</h3>
-<div class="outline-text-3" id="text-orgda5fef4">
+<div id="outline-container-org1dede1c" class="outline-3">
+<h3 id="org1dede1c">Time Series Analysis</h3>
+<div class="outline-text-3" id="text-org1dede1c">
 <ul class="org-ul">
 <li>This project is about analyzing time-series data using Recurrent Neural Networks (RNNs). I built RNN models and applied them to analyze time-series data and make predictions.</li>
 </ul>
