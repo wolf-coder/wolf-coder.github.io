@@ -1,9 +1,12 @@
 #+title: Machine Learning Books
 #+INCLUDE: "header.org"
-
+#+OPTIONS: broken-links:t
 =Status=: Under construction
 * The story
-- During taking my Machine Learning speciality at holberton school,
-- Machine learning isn't like learning programming
-  * It has a soul, that soul is called mathematics
-  * The majority of students take it as learning another algorithm
+- While I was taking my Machine Learning specialty at Holberton School, I made it a point to read two essential books:
+  - [[https://www.amazon.com/Mathematics-Machine-Learning-Peter-Deisenroth/dp/110845514X/ref=sr_1_1?keywords=%2FMathematics-Machine-Learning-Peter-Deisenroth&qid=1676857020&sr=8-1][Mathematics for Machine Learning]]
+  - [[https://www.amazon.com/Machine-Learning-Probabilistic-Perspective-Computation/dp/0262018020/ref=sr_1_3?keywords=Machine-Learning-Probabilistic-Perspective&qid=1676856962&sr=8-3][Machine Learning: A Probabilistic Perspective]]
+- By doing so, I was able to move beyond the mindset of just learning an algorithm and appreciate the mathematical principles behind the algorithms.
+
+- This page will  contain a graphical front-end  ([[https://github.com/org-roam/org-roam-ui][org-roam-ui]]) linking all my ML projects to these books
+- The first ones who will benefit from this work are Holberton School students.
